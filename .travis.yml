@@ -6,6 +6,7 @@ before_install:
   - pip install poetry
 install:
   - poetry install
+  - cp contrib/env-sample .env
 script:
   - poetry run flake8 .
   - poetry run pytest --cov=pypro
