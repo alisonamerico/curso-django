@@ -1,3 +1,4 @@
+# admin.py
 from django.conf import settings
 from django.contrib import admin, messages
 from django.contrib.admin.options import IS_POPUP_VAR
