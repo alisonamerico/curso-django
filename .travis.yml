@@ -3,10 +3,9 @@ language: python
 python:
   - 3.8
 
-services:
-  postgresql
+services: postgresql
 addons:
-  postgresql: '9.5'
+  postgresql: "9.5"
 
 before_install:
   - pip install poetry
@@ -19,7 +18,7 @@ install:
 before_script:
   - psql -c "CREATE DATABASE testdb;" -U postgres
 
- script:
+script:
   - poetry run flake8 .
   - poetry run pytest --cov=pypro
 
