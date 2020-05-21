@@ -13,10 +13,11 @@ before_install:
 
   install:
   - poetry install
+  - poetry export -f requirements.txt > requirements.txt
   - cp contrib/env-sample .env
 
 before_script:
-  - psql -c "CREATE DATABASE testedb;" -U postgres
+  - psql -c "CREATE DATABASE testdb;" -U postgres
 
   script:
   - poetry run flake8 .
