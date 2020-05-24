@@ -41,63 +41,90 @@
           <h2>
             Curso de Python com Luciano Ramalho
           </h2>
-          <p>
-            Confira em breve mais informações sobre o curso que será ministrado pelo
-            autor do livro <a href="https://www.oreilly.com/library/view/fluent-python/9781491946237/"
-              target="_blank">Python Fluente</a>
-          </p>
+          <h4 class="mt-4">Entre na fila de espera</h4>
+          <div id="mc_embed_signup">
+            <!-- Begin Mailchimp Signup Form -->
+            <form
+              action="https://herokuapp.us18.list-manage.com/subscribe/post?u=54e145b2c0dc189883e57fbd8&amp;id=f4268740b6"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+              class="form-row align-items-center" target="_blank" novalidate>
+              <div class="form-row align-items-center">
+                <div class="col-auto">
+                  <label class="sr-only" for="mce-EMAIL">Email</label>
+                  <input type="email" value="" name="EMAIL" class="form-control required" id="mce-EMAIL"
+                    placeholder="exemplo@email.com">
+                </div>
+                <div class="col-auto">
+                  <label class="sr-only" for="mce-FNAME">Email</label>
+                  <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Seu Nome">
+                </div>
+
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                    name="b_54e145b2c0dc189883e57fbd8_f4268740b6" tabindex="-1" value="">
+                </div>
+
+                <div class="col-auto">
+                  <input type="submit" value="Salvar" name="subscribe" id="mc-embedded-subscribe"
+                    class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+            <!--End mc_embed_signup-->
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <h5 class="card-header">
-            Mais detalhes sobre o instrutor
-          </h5>
-          <div class="card-body">
-            <p class="card-text">
-              <img src="{% static 'img/luciano-ramalho.png' %}" alt="Foto de Luciano Ramalho"
-                class="img-thumbnail float-left mr-3" />
-              Ramalho é sócio e professor na <a href="https://www.python.pro.br">Python Pro</a> e autor do Livro Python
-              Fluente. Foi diretor técnico do Brasil Online,
-              primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e outros,
-              usando Python
-              desde 1998. Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República,
-              Globo.com e Itaú.
-              Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou a criar a Associação Python
-              Brasil e foi seu
-              presidente. É membro da Python Software Foundation e fundador do Garoa Hacker Clube, o primeiro
-              hackerspace do Brasil.
-            </p>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <h5 class="card-header">
+              Mais detalhes sobre o instrutor
+            </h5>
+            <div class="card-body">
+              <p class="card-text">
+                <img src="{% static 'img/luciano-ramalho.png' %}" alt="Foto de Luciano Ramalho"
+                  class="img-thumbnail float-left mr-3" />
+                Ramalho é sócio e professor na <a href="www.python.pro.br>">Python Pro</a> e autor do Livro <a
+                  href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank">Python
+                  Fluente</a>. Foi diretor técnico do Brasil Online,
+                primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e
+                outros,
+                usando Python
+                desde 1998. Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República,
+                Globo.com e Itaú.
+                Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou a criar a Associação Python
+                Brasil e foi seu
+                presidente. É membro da Python Software Foundation e fundador do Garoa Hacker Clube, o primeiro
+                hackerspace do Brasil.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="main-footer mt-5 pt-4 text-light">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h3>Entre em Contato</h3>
-          <address>
-            +55 12 997-411-854
-            <br />
-            <a href="mailto:ramalho@python.pro.br" class="text-light">ramalho@python.pro.br</a>
-          </address>
-        </div>
-      </div>
-    </div>
-    <div class="rights pb-4">
+    <footer class="main-footer mt-5 pt-4 text-light">
       <div class="container">
         <div class="row">
           <div class="col">
-            {% now 'Y' %} Python Pro. Todos direitos reservados.
+            <h3>Entre em Contato</h3>
+            <address>
+              +55 12 997-411-854
+              <br />
+              <a href="mailto:ramalho@python.pro.br" class="text-light">ramalho@python.pro.br</a>
+            </address>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+      <div class="rights pb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              {% now 'Y' %} Python Pro. Todos direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
