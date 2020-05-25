@@ -1,50 +1,66 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python Pro</title>
 
-  <title>Python Pro</title>
+    <meta name="description" content="Página do curso Python Pro" />
+    <meta name="author" content="Alison Américo" />
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
+    <!-- arquivos css -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
 
-  <meta name="description" content="Página do curso Python Pro" />
-  <meta name="author" content="Alison Américo" />
-  <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
-  <!-- arquivos css -->
-  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
-  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
-  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <!-- arquivos js -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </head>
 
-  <!-- arquivos js -->
-  <script src="{% static 'js/bootstrap.js' %}"></script>
-  <script src="{% static 'js/bootstrap.min.js' %}"></script>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto"></ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron">
+            <h2>
+              Curso de Python com Luciano Ramalho
+            </h2>
+            <h4 class="mt-4">Matrículas abertas! Custo R$1.000,00</h4>
+            <!-- INICIO DO BOTAO PAGSEGURO --><a
+              href="https://pag.ae/7W3kyrkS3/button"
+              target="_blank"
+              title="Pagar com PagSeguro"
+              ><img
+                src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif"
+                alt="Pague com PagSeguro - é rápido, grátis e seguro!"
+            /></a>
+            <!-- FIM DO BOTAO PAGSEGURO -->
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto"></ul>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <h2>
-            Curso de Python com Luciano Ramalho
-          </h2>
-          <h4 class="mt-4">Entre na fila de espera</h4>
-          <div id="mc_embed_signup">
+            <!-- <h4 class="mt-4">Entre na fila de espera</h4> -->
             <!-- Begin Mailchimp Signup Form -->
-            <form
+            <!-- <form
               action="https://herokuapp.us18.list-manage.com/subscribe/post?u=54e145b2c0dc189883e57fbd8&amp;id=f4268740b6"
               method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
               class="form-row align-items-center" target="_blank" novalidate>
@@ -60,7 +76,7 @@
                 </div>
 
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+            <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                     name="b_54e145b2c0dc189883e57fbd8_f4268740b6" tabindex="-1" value="">
                 </div>
 
@@ -69,7 +85,7 @@
                     class="btn btn-primary">
                 </div>
               </div>
-            </form>
+            </form> -->
             <!--End mc_embed_signup-->
           </div>
         </div>
@@ -82,20 +98,26 @@
             </h5>
             <div class="card-body">
               <p class="card-text">
-                <img src="{% static 'img/luciano-ramalho.png' %}" alt="Foto de Luciano Ramalho"
-                  class="img-thumbnail float-left mr-3" />
-                Ramalho é sócio e professor na <a href="www.python.pro.br>">Python Pro</a> e autor do Livro <a
-                  href="https://www.oreilly.com/library/view/fluent-python/9781491946237/" target="_blank">Python
-                  Fluente</a>. Foi diretor técnico do Brasil Online,
-                primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e
-                outros,
-                usando Python
-                desde 1998. Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República,
-                Globo.com e Itaú.
-                Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou a criar a Associação Python
-                Brasil e foi seu
-                presidente. É membro da Python Software Foundation e fundador do Garoa Hacker Clube, o primeiro
-                hackerspace do Brasil.
+                <img
+                  src="{% static 'img/luciano-ramalho.png' %}"
+                  alt="Foto de Luciano Ramalho"
+                  class="img-thumbnail float-left mr-3"
+                />
+                Ramalho é sócio e professor na
+                <a href="www.python.pro.br>">Python Pro</a> e autor do Livro
+                <a
+                  href="https://www.oreilly.com/library/view/fluent-python/9781491946237/"
+                  target="_blank"
+                  >Python Fluente</a
+                >. Foi diretor técnico do Brasil Online, primeiro portal da
+                Abril S/A na Web. Liderou times para os portais IDG Now, BOL,
+                UOL, AOL Brasil e outros, usando Python desde 1998. Como
+                instrutor, atendeu clientes como Citibank, CPqD, Serpro,
+                Presidência da República, Globo.com e Itaú. Palestrante em
+                eventos internacionais como FISL, PyCon US e OSCON. Ajudou a
+                criar a Associação Python Brasil e foi seu presidente. É membro
+                da Python Software Foundation e fundador do Garoa Hacker Clube,
+                o primeiro hackerspace do Brasil.
               </p>
             </div>
           </div>
@@ -110,7 +132,9 @@
             <address>
               +55 12 997-411-854
               <br />
-              <a href="mailto:ramalho@python.pro.br" class="text-light">ramalho@python.pro.br</a>
+              <a href="mailto:ramalho@python.pro.br" class="text-light"
+                >ramalho@python.pro.br</a
+              >
             </address>
           </div>
         </div>
@@ -125,6 +149,5 @@
         </div>
       </div>
     </footer>
-</body>
-
+  </body>
 </html>
