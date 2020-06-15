@@ -136,3 +136,6 @@ staticfiles/
 
 # Media files
 mediafiles/
+
+# postgres files for local development
+.pgdata
