@@ -1,7 +1,5 @@
 # curso-django
 
-Código desenvolvido no módulo de Django do curso: https://www.python.pro.br/
-
 Aplicação disponível em https://pyprodjangoalison.herokuapp.com/
 
 [![Build Status](https://travis-ci.com/alisonamerico/curso-django.svg?branch=master)](https://travis-ci.com/alisonamerico/curso-django)
