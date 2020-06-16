@@ -2,15 +2,8 @@ from pypro.aperitivos.models import Video
 from django.shortcuts import render, get_object_or_404
 
 
-videos = [
-    Video(slug='motivacao', titulo='Video Aperitivo: Motivação', vimeo_id='422595352'),
-    Video(slug='instalacao-windows', titulo='Instalação Windows', vimeo_id='423624747'),
-]
-
-videos_dct = {v.slug: v for v in videos}
-
-
 def indice(request):
+    videos = Video.objects.order_by('creation').all()
     return render(request, 'aperitivos/indice.html', context={'videos': videos})
 
 
