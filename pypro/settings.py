@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pypro.base',
     'pypro.aperitivos',
+    'pypro.modulos',
+    'ordered_model',
 
 ]
 
@@ -70,6 +72,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # new line processors
+                'pypro.modulos.context_processors.listar_modulos',
             ],
         },
     },
