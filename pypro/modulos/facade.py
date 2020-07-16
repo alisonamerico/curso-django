@@ -6,7 +6,7 @@ def listar_modulos_ordenados() -> List[Modulo]:
     """Lista módulos ordenados por títulos
     Returns:
     """
-    return list(Modulo.objects.order_by('titulo').all())
+    return list(Modulo.objects.order_by('order').all())
 
 
 def encontrar_modulo(slug: str) -> Modulo:
@@ -18,4 +18,4 @@ def listar_aulas_de_modulo_ordenadas(modulo: Modulo):
 
 
 def encontrar_aula(slug: str) -> Aula:
-    return Aula.objects.get(slug=slug)
+    return Aula.objects.select_related('modulo').get(slug=slug)
