@@ -24,9 +24,9 @@ django==3.0.8 \
 django-debug-toolbar==2.2 \
     --hash=sha256:eabbefe89881bbe4ca7c980ff102e3c35c8e8ad6eb725041f538988f2f39a943 \
     --hash=sha256:ff94725e7aae74b133d0599b9bf89bd4eb8f5d2c964106e61d11750228c8774c
-django-extensions==3.0.3 \
-    --hash=sha256:6230898b1e1d5deb3ddab8335b2d270edb7afa4ef916a95e479a19fdfb0464cb \
-    --hash=sha256:d5fcf8f3bab019487e07473c24453bccd5acfb4440f3ef36788294c307b09d4c
+django-extensions==3.0.9 \
+    --hash=sha256:6809c89ca952f0e08d4e0766bc0101dfaf508d7649aced1180c091d737046ea7 \
+    --hash=sha256:dc663652ac9460fd06580a973576820430c6d428720e874ae46b041fa63e0efa
 django-ordered-model==3.4.1 \
     --hash=sha256:d867166ed4dd12501139e119cbbc5b4d19798a3e72740aef0af4879ba97102cf \
     --hash=sha256:29af6624cf3505daaf0df00e2df1d0726dd777b95e08f304d5ad0264092aa934
