@@ -1,4 +1,5 @@
 static/* linguist-vendored
+*.js linguist-vendored
 
 # Basic .gitattributes for a python repo.
 
