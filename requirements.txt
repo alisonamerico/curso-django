@@ -51,9 +51,9 @@ pexpect==4.8.0; sys_platform != "win32" \
 pickleshare==0.7.5 \
     --hash=sha256:9649af414d74d4df115d5d718f82acb59c9d418196b7b4290ed47a12ce62df56 \
     --hash=sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca
-prompt-toolkit==3.0.5 \
-    --hash=sha256:df7e9e63aea609b1da3a65641ceaf5bc7d05e0a04de5bd45d05dbeffbabf9e04 \
-    --hash=sha256:563d1a4140b63ff9dd587bda9557cffb2fe73650205ab6f4383092fb882e7dc8
+prompt-toolkit==3.0.18 \
+    --hash=sha256:bf00f22079f5fadc949f42ae8ff7f05702826a97059ffcc6281036ad40ac6f04 \
+    --hash=sha256:e1b4f11b9336a28fa11810bc623c357420f69dfdb6d2dac41ca2c21a55c033bc
 psycopg2-binary==2.8.5 \
     --hash=sha256:ccdc6a87f32b491129ada4b87a43b1895cf2c20fdb7f98ad979647506ffc41b6 \
     --hash=sha256:96d3038f5bd061401996614f65d27a4ecb62d843eb4f48e212e6d129171a721f \
