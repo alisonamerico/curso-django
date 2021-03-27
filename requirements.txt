@@ -30,9 +30,8 @@ django-extensions==3.0.3 \
 django-ordered-model==3.4.1 \
     --hash=sha256:d867166ed4dd12501139e119cbbc5b4d19798a3e72740aef0af4879ba97102cf \
     --hash=sha256:29af6624cf3505daaf0df00e2df1d0726dd777b95e08f304d5ad0264092aa934
-gunicorn==20.0.4 \
-    --hash=sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c \
-    --hash=sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626
+gunicorn==20.1.0 \
+    --hash=sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8
 ipython==7.16.1 \
     --hash=sha256:2dbcc8c27ca7d3cfe4fcdff7f45b27f9a8d3edfa70ff8024a71c7a8eb5f09d64 \
     --hash=sha256:9f4fcb31d3b2c533333893b9172264e4821c1ac91839500f31bd43f2c59b3ccf
